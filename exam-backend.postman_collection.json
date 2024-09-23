@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "d9929911-863b-457b-8893-7dbe628f5af0",
+		"name": "exam-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30140156",
+		"_collection_link": "https://jirayus2023.postman.co/workspace/Team-Workspace~c0fd2b99-99d4-42bb-8d81-2ffdeecbda63/collection/30140156-d9929911-863b-457b-8893-7dbe628f5af0?action=share&source=collection_link&creator=30140156"
+	},
+	"item": [
+		{
+			"name": "https://emkc.org/api/v2/piston/runtimes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://emkc.org/api/v2/piston/runtimes",
+					"protocol": "https",
+					"host": [
+						"emkc",
+						"org"
+					],
+					"path": [
+						"api",
+						"v2",
+						"piston",
+						"runtimes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://emkc.org/api/v2/piston/execute",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"language\": \"python\",\r\n  \"version\": \"3.10.0\",\r\n  \"files\": [{\r\n    \"name\": \"main.py\",\r\n    \"content\": \"print(\\\"Hello, World!\\\")\"\r\n  }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://emkc.org/api/v2/piston/execute",
+					"protocol": "https",
+					"host": [
+						"emkc",
+						"org"
+					],
+					"path": [
+						"api",
+						"v2",
+						"piston",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
